@@ -15,7 +15,7 @@ export default function card(props: Props) {
             <div className="text-base font-bold pb-3">
                 {movie.title}
                 <StarRating 
-                    rating={movie.vote_average}
+                    rating={Number(movie.vote_average)}
                 />
             </div>
             <div className="text-sm">
